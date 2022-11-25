@@ -1,0 +1,24 @@
+{
+  "errorFallback": "Fehler",
+  "title": "Beispiel Internationalisierung",
+  "heading": "Schildkröte",
+  "common": {
+    "welcome": "Willkommen, Fremder!"
+  },
+  "deeply": {
+    "nested": {
+      "structure": {
+        "also": {
+          "works": "🎉 yay!"
+        }
+      }
+    }
+  },
+  "button": {
+    "swithToTurkish": "Wechseln Sie zu Türkisch",
+    "swithToEnglish": "Wechseln Sie zu Englisch",
+    "swithToSpanish": "Wechseln Sie zu Spanisch",
+    "swithToGerman": "Wechseln Sie zu Deutsch",
+    "switchToNone": "Auf keine umschalten (Fehler)"
+  }
+}

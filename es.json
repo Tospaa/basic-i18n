@@ -1,0 +1,24 @@
+{
+  "errorFallback": "error",
+  "title": "ejemplo de internacionalización",
+  "heading": "Tortuga",
+  "common": {
+    "welcome": "Bienvenido, extraño!"
+  },
+  "deeply": {
+    "nested": {
+      "structure": {
+        "also": {
+          "works": "🎉 Hurra!"
+        }
+      }
+    }
+  },
+  "button": {
+    "swithToTurkish": "cambiar a turco",
+    "swithToEnglish": "Cambiar a inglés",
+    "swithToSpanish": "cambiar a español",
+    "swithToGerman": "Cambiar a alemán",
+    "switchToNone": "Cambiar a ninguno (error)"
+  }
+}

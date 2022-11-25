@@ -16,6 +16,9 @@
   },
   "button": {
     "swithToTurkish": "Türkçe'ye geç",
-    "swithToEnglish": "İngilizce'ye geç"
+    "swithToEnglish": "İngilizce'ye geç",
+    "swithToSpanish": "İspanyolca'ya geç",
+    "swithToGerman": "Almanca'ya geç",
+    "switchToNone": "Olmayan bir dile geç (hata)"
   }
 }

@@ -16,6 +16,9 @@
   },
   "button": {
     "swithToTurkish": "Switch to Turkish",
-    "swithToEnglish": "Switch to English"
+    "swithToEnglish": "Switch to English",
+    "swithToSpanish": "Switch to Spanish",
+    "swithToGerman": "Switch to German",
+    "switchToNone": "Switch to none (error)"
   }
 }
