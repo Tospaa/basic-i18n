@@ -45,7 +45,8 @@ Enjoy!
 
 ## Specifications
 
- - Mamoization - does not download the same resource twice.
+ - Memoization - does not download the same resource twice.
  - Async - does not block the main thread.
  - No dependency - does not contain bloatware.
  - Pure JavaScript - no need to transpile.
+ - Remembers choice - makes use of the local storage API.

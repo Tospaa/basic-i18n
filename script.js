@@ -1,4 +1,5 @@
 const memo = new Map();
+const storageKey = 'basic-i18n-lang';
 
 function memoizeAsync(func) {
   return async function(...args) {
@@ -46,7 +47,7 @@ function findValueGivenPath(ob, path) {
   return findValueGivenPath(ob[splitPath[0]], splitPath.slice(1).join('.'));
 }
 
-function main(localFile) {
+function translate(localFile) {
   if (localFile.title !== undefined) document.title = localFile.title;
   const allElementsToBeTranslated = document.querySelectorAll('[data-i18n]');
 
@@ -56,7 +57,10 @@ function main(localFile) {
 }
 
 function applyTranslation(lang) {
-  getLocalizationFile(lang).then(main);
+  getLocalizationFile(lang).then((localFile) => {
+    localStorage.setItem(storageKey, lang);
+    return translate(localFile);
+  });
 }
 
-applyTranslation('en');
+applyTranslation(localStorage.getItem(storageKey) ?? 'en');
