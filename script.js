@@ -1,4 +1,20 @@
-function getLocalizationFile(lang) {
+const memo = new Map();
+
+function memoizeAsync(func) {
+  return async function(...args) {
+    const argsStr = JSON.stringify(args);
+    const cached = memo.get(argsStr);
+    if (cached !== undefined) {
+      return Promise.resolve(cached);
+    }
+
+    const result = await func.apply(window, args);
+    memo.set(argsStr, result);
+    return Promise.resolve(result);
+  };
+}
+
+function _getLocalizationFile(lang) {
   return new Promise((resolve, reject) => {
     function onLoad() {
       if (req.readyState === 4 && req.status >= 200 && req.status < 300) {
@@ -17,6 +33,8 @@ function getLocalizationFile(lang) {
     req.send();
   });
 }
+
+const getLocalizationFile = memoizeAsync(_getLocalizationFile);
 
 function findValueGivenPath(ob, path) {
   if (ob === undefined || typeof path !== 'string') return;
