@@ -1,0 +1,19 @@
+{
+  "title": "Tortoise",
+  "common": {
+    "welcome": "Welcome, stranger!"
+  },
+  "deeply": {
+    "nested": {
+      "structure": {
+        "also": {
+          "works": "🎉 yay!"
+        }
+      }
+    }
+  },
+  "button": {
+    "swith_to_turkish": "Switch to Turkish",
+    "swith_to_english": "Switch to English"
+  }
+}

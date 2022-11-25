@@ -1,0 +1,19 @@
+{
+  "title": "Tospaa",
+  "common": {
+    "welcome": "Hoş geldin, yabancı!"
+  },
+  "deeply": {
+    "nested": {
+      "structure": {
+        "also": {
+          "works": "🎉 oley!"
+        }
+      }
+    }
+  },
+  "button": {
+    "swith_to_turkish": "Türkçe'ye geç",
+    "swith_to_english": "İngilizce'ye geç"
+  }
+}

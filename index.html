@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i18n example</title>
+</head>
+<body>
+  <p data-i18n="title"></p>
+  <p data-i18n="common.welcome"></p>
+  <span data-i18n="deeply.nested.structure.also.works"></span>
+
+  <button onclick="applyTranslation('tr')" data-i18n="button.swith_to_turkish">Switch to Turkish</button>
+  <button onclick="applyTranslation('en')" data-i18n="button.swith_to_english">Switch to English</button>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
