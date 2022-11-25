@@ -19,19 +19,21 @@ function getLocalizationFile(lang) {
 }
 
 function findValueGivenPath(ob, path) {
+  if (ob === undefined || typeof path !== 'string') return;
   const splitPath = path.split('.');
   if (splitPath.length === 1) {
-    return ob[path];
+    return typeof ob[path] === 'string' ? ob[path] : JSON.stringify(ob[path]);
   }
 
   return findValueGivenPath(ob[splitPath[0]], splitPath.slice(1).join('.'));
 }
 
 function main(localFile) {
+  if (localFile.title !== undefined) document.title = localFile.title;
   const allElementsToBeTranslated = document.querySelectorAll('[data-i18n]');
 
   for (let elem of allElementsToBeTranslated) {
-    elem.innerText = findValueGivenPath(localFile, elem.dataset.i18n);
+    elem.innerText = findValueGivenPath(localFile, elem.dataset.i18n) ?? localFile.errorFallback ?? 'no_key';
   }
 }
 

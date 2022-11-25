@@ -7,12 +7,14 @@
   <title>i18n example</title>
 </head>
 <body>
-  <p data-i18n="title"></p>
+  <h1 data-i18n="title"></h1>
+  <h2 data-i18n="heading"></h2>
   <p data-i18n="common.welcome"></p>
   <span data-i18n="deeply.nested.structure.also.works"></span>
+  <p data-i18n="this.one.does.not.have.a.value"></p>
 
-  <button onclick="applyTranslation('tr')" data-i18n="button.swith_to_turkish">Switch to Turkish</button>
-  <button onclick="applyTranslation('en')" data-i18n="button.swith_to_english">Switch to English</button>
+  <button onclick="applyTranslation('tr')" data-i18n="button.swithToTurkish"></button>
+  <button onclick="applyTranslation('en')" data-i18n="button.swithToEnglish"></button>
 
   <script type="text/javascript" src="script.js"></script>
 </body>

@@ -1,5 +1,7 @@
 {
-  "title": "Tospaa",
+  "errorFallback": "hata",
+  "title": "uluslararasılaşma örneği",
+  "heading": "Tospaa",
   "common": {
     "welcome": "Hoş geldin, yabancı!"
   },
@@ -13,7 +15,7 @@
     }
   },
   "button": {
-    "swith_to_turkish": "Türkçe'ye geç",
-    "swith_to_english": "İngilizce'ye geç"
+    "swithToTurkish": "Türkçe'ye geç",
+    "swithToEnglish": "İngilizce'ye geç"
   }
 }

@@ -1,5 +1,7 @@
 {
-  "title": "Tortoise",
+  "errorFallback": "error",
+  "title": "i18n example",
+  "heading": "Tortoise",
   "common": {
     "welcome": "Welcome, stranger!"
   },
@@ -13,7 +15,7 @@
     }
   },
   "button": {
-    "swith_to_turkish": "Switch to Turkish",
-    "swith_to_english": "Switch to English"
+    "swithToTurkish": "Switch to Turkish",
+    "swithToEnglish": "Switch to English"
   }
 }
